@@ -10,14 +10,14 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-  font: normal 100%;
+  font-size: 100%;
   line-height: 1.3;
   font-family: sans-serif;
   background-color: #e2e2e2;
 }
 
-h1 {
-
+section{
+  overflow: hidden;
 
 }
 
@@ -54,21 +54,29 @@ div{
  @media only screen and (min-width: 38em) {
 
    html{
-     font: normal 110%;
+     font-size: 110%;
      line-height: 1.4;
    }
+.text{
+  display: inline-block;
+      float: left;;
+      width: 40%;
+      margin-left: 1em;
+}
 
-  section{
-    position: relative;
-
+  .img-flex{
+    vertical-align: middle;
+    display: inline-block;
+   float: left;
+   margin-left: 1em;
+   margin-top: 2em;
+    max-width: 50%;
   }
-   img{
-     max-width: 50%;
-     margin top: 1em;
-     position: absolute;
-     right: 50%;
-    transform: translateX(0%);
-     right: 0%;
-     top: 0%
-   }
+
  }
+
+  @media only screen and (min-width: 60em) {
+  }
+
+   @media only screen and (min-width: 90em) {
+   }
