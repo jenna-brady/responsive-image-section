@@ -16,12 +16,10 @@ html {
   background-color: #e2e2e2;
 }
 
-section{
-  overflow: hidden;
-
+*, *::before, *::after {
+  box-sizing: inherit;
 }
-
-.btn {
+a {
   display: inline-block;
   padding: 0.5em 0.75em;
   margin-top: .5em;
@@ -31,6 +29,13 @@ section{
   text-decoration: none;
   background-color: #555;
 
+}
+
+
+a:hover {
+  list-style-type: none;
+  text-decoration: none;
+  background-color: #e2e2e2;
 }
 
 div{
@@ -51,15 +56,28 @@ div{
    width: 100%;
  }
 
+ body{
+   margin: 1em;
+ }
+
+ .img-flex{
+   display: block;;
+   width: 100%;
+
+ }
+
  @media only screen and (min-width: 38em) {
 
    html{
      font-size: 110%;
      line-height: 1.4;
    }
+
+body{
+   position: relative;
+}
 .text{
   display: inline-block;
-      float: left;;
       width: 40%;
       margin-left: 1em;
 }
@@ -67,7 +85,7 @@ div{
   .img-flex{
     vertical-align: middle;
     display: inline-block;
-   float: left;
+   position: absolute;
    margin-left: 1em;
    margin-top: 2em;
     max-width: 50%;
@@ -76,7 +94,48 @@ div{
  }
 
   @media only screen and (min-width: 60em) {
+
+    html{
+      font-size: 120%;
+      line-height: 1.5;
+    }
+
+    body{
+      margin-left: 1em;
+    }
+    .text{
+      margin-top: 2em;
+    }
+
+    .img-flex{
+      width: 40%;
+    }
+
   }
 
+
+
+
    @media only screen and (min-width: 90em) {
+
+     html{
+       font-size: 130%;
+       line-height: 1.5;
+     }
+
+     .img-flex{
+       width: 35%;
+       text-align: center;
+     }
+
+body{
+margin-left: 3em;
+}
+
+     .text{
+       margin-top: 5em;
+       margin-left: 3em;
+     }
+
+
    }
